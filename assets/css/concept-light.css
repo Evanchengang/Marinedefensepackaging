@@ -378,7 +378,7 @@ a {
   margin: 5px 0;
 }
 
-/* Hero Section */
+/* Hero Section (Homepage) */
 .hero-section {
   position: relative;
   min-height: 680px;
@@ -413,6 +413,37 @@ a {
   gap: 16px;
   flex-wrap: wrap;
 }
+
+/* Subpage Unified Hero (100% Unified height & padding across ALL inner pages) */
+.subpage-hero {
+  position: relative;
+  min-height: 380px;
+  display: flex;
+  align-items: center;
+  background-color: var(--color-navy);
+  background-size: cover;
+  background-position: center;
+  color: var(--color-white);
+  padding: 60px 0;
+}
+
+.subpage-hero .hero-content {
+  max-width: 820px;
+}
+
+.subpage-hero h1 {
+  color: var(--color-white);
+  margin-top: 8px;
+  margin-bottom: 16px;
+  font-size: 48px;
+}
+
+.subpage-hero p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 19px;
+  line-height: 1.6;
+}
+
 
 /* Credentials Strip */
 .credentials-section {
