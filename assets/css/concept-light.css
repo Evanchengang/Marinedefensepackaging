@@ -299,7 +299,7 @@ a {
 }
 
 .brand-logo img {
-  height: 64px;
+  height: 72px;
   width: auto;
 }
 
@@ -401,44 +401,7 @@ a {
   color: var(--color-navy);
 }
 
-/* Slim top information bar (address / email / CAGE) */
-.top-bar {
-  background-color: var(--color-navy-dark);
-  color: rgba(255, 255, 255, 0.85);
-  font-family: var(--font-body);
-  font-size: 12.5px;
-  letter-spacing: 0.02em;
-}
-
-.top-bar .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
-
-.top-bar a {
-  color: rgba(255, 255, 255, 0.85);
-}
-
-.top-bar a:hover {
-  color: var(--color-white);
-}
-
-.top-bar-right {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.top-bar-tag {
-  font-family: var(--font-mono);
-  font-size: 11.5px;
-  color: var(--color-gold);
-  letter-spacing: 0.06em;
-}
+/* Slim top information bar (address / email / CAGE) - removed per client request */
 
 .mobile-toggle {
   display: none;
@@ -1247,6 +1210,7 @@ code {
   .subpage-hero h1 { font-size: 34px; }
 
   .header-sticky { height: 72px; }
+  .brand-logo img { height: 64px; }
   .header-container { padding-left: 20px; padding-right: 20px; }
   .mobile-toggle { display: block; }
 
