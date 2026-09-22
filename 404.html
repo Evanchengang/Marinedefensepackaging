@@ -3,82 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>404 - Munitions Specification Not Found | Marine Defense Packaging</title>
+  <title>Page Not Found (404) | Marine Defense Packaging</title>
   <meta name="robots" content="noindex, follow">
   <link rel="icon" type="image/png" href="assets/images/logo-final-1-80x80.png">
-
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Stardos+Stencil:wght@400;700&display=swap" rel="stylesheet">
-
-  <!-- Light theme stylesheet (concept-light.css only) -->
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/concept-light.css">
-
-  <style>
-    .err-wrap {
-      min-height: 100vh;
-      min-height: 100dvh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 2rem 1.25rem;
-    }
-    .err-card {
-      max-width: 640px;
-      width: 100%;
-      text-align: center;
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-top: 4px solid var(--amber);
-      border-radius: 10px;
-      padding: 3rem 2.5rem;
-      box-shadow: var(--shadow-lg);
-    }
-    .err-code {
-      font-family: var(--font-stencil);
-      font-size: clamp(4.5rem, 16vw, 8rem);
-      line-height: 1;
-      color: var(--navy);
-      letter-spacing: 0.1em;
-      margin: 1.25rem 0 0.75rem;
-    }
-    .err-card h1 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-    .err-card .section-subtitle {
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .err-logo {
-      margin: 0 auto;
-    }
-    .err-actions {
-      display: flex;
-      gap: 0.9rem;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin-top: 2.25rem;
-    }
-  </style>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
-  <main id="main-content" class="err-wrap">
-    <div class="err-card">
-      <img class="err-logo" src="assets/images/logofinale-300x300.png" alt="Marine Defense Packaging" width="64" height="64">
-      <div class="err-code" aria-hidden="true">404</div>
-      <span class="mono-tag">ERROR 404 // COORDINATES NOT FOUND</span>
-      <h1>Target Page Unavailable</h1>
-      <p class="section-subtitle">
-        The defense packaging specification or catalog page you requested has been relocated or is under classified revision.
-      </p>
-      <div class="err-actions">
-        <a href="index.html" class="btn btn-primary">Return to Homepage</a>
-        <a href="products.html" class="btn btn-outline">Explore Product Catalog</a>
+
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="nav-brand">
+        <img src="assets/images/logofinale-300x300.png" alt="Marine Defense Packaging Logo" width="48" height="48">
+        <span class="brand-text">
+          <span class="brand-title">Marine Defense</span>
+          <span class="brand-subtitle">Packaging</span>
+        </span>
+      </a>
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="products.html" class="nav-link">Products</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="certificates.html" class="nav-link">Certifications &amp; QA</a></li>
+          <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <a href="index.html#quote" class="btn btn-primary btn-sm">Request Packaging Quote</a>
       </div>
     </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero-milpaq" style="padding: 6rem 0;">
+      <div class="container">
+        <div class="hero-milpaq-content" style="text-align: center; margin: 0 auto;">
+          <div class="eyebrow-wrap light" style="justify-content: center;">
+            <span class="eyebrow-line"></span>
+            <span class="eyebrow">ERROR 404 &mdash; PAGE NOT FOUND</span>
+          </div>
+          <h1>Requested Document Not Located</h1>
+          <p class="hero-desc" style="margin: 0 auto 2rem;">The page or technical data package document you requested does not exist or has been relocated.</p>
+          <div class="hero-milpaq-actions" style="justify-content: center;">
+            <a href="index.html" class="btn btn-primary btn-lg">&larr; Return to Home Page</a>
+            <a href="products.html" class="btn btn-outline-white btn-lg">Browse Product Catalog</a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <div>&copy; <span class="current-year">2026</span> Marine Defense Packaging. All Rights Reserved.</div>
+      <div><a href="index.html">Home</a></div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
