@@ -9,6 +9,7 @@
   <link rel="icon" type="image/png" href="../assets/images/logo-final-1-80x80.png">
 </head>
 <body>
+    <!-- Sticky Navigation Header (Height 80px) -->
   <header class="header-sticky">
     <div class="header-container">
       <a href="../index.html" class="brand-logo">
@@ -18,19 +19,45 @@
           <span class="brand-subtitle">Engineered Defense Packaging</span>
         </div>
       </a>
+
       <nav>
         <ul class="nav-menu" id="navMenu">
-          <li><a href="../products.html" class="nav-link active">Industries</a></li>
-          <li><a href="../products.html" class="nav-link active">Solutions</a></li>
-          <li><a href="../about.html" class="nav-link">Capabilities</a></li>
-          <li><a href="../certificates.html" class="nav-link">Quality</a></li>
-          <li><a href="../about.html" class="nav-link">About</a></li>
+          <li class="nav-item has-dropdown">
+            <a href="../products.html" class="nav-link">
+              Products
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="155mm-artillery-pallets.html">155mm Heavy Artillery Pallets</a></li>
+              <li><a href="ammunition-containers.html">Ammunition Containers</a></li>
+              <li><a href="wirebound-boxes.html">Wirebound Boxes</a></li>
+              <li><a href="bomb-pallets.html">Bomb Pallets</a></li>
+              <li><a href="mortar-packaging.html">Mortar Packaging</a></li>
+              <li><a href="ammo-can-pallet-trays.html">Ammo Can Pallet Trays</a></li>
+              <li><a href="internal-packaging.html">Internal Protective Packaging</a></li>
+              <li><a href="timber-packaging.html">Timber Packaging</a></li>
+              <li><a href="ammunition-links.html">Ammunition Links</a></li>
+              <li><a href="injection-molded-cases.html">Molded Protective Cases</a></li>
+              <li><a href="filler-separator.html">Filler & Separator Pads</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a href="../products.html" class="nav-link">Solutions</a></li>
+          <li class="nav-item"><a href="../about.html" class="nav-link">Capabilities</a></li>
+          <li class="nav-item"><a href="../certificates.html" class="nav-link">Quality</a></li>
+          <li class="nav-item"><a href="../about.html" class="nav-link">About</a></li>
         </ul>
       </nav>
+
       <div class="header-actions">
-        <a href="../contact.html" class="btn-primary">Contact Us</a>
+        <a href="../contact.html" class="btn-primary">REQUEST PACKAGING QUOTE</a>
       </div>
-      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation"><span></span><span></span><span></span></button>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </header>
 
