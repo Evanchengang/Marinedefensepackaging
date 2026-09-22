@@ -5,7 +5,7 @@
             Gold Eyebrow Accent (#D97706), Light Bg (#F8FAFC), Card Border (#E2E8F0)
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap');
+/* Fonts loaded via <link> in HTML head (faster than @import) */
 
 :root {
   --color-navy: #0B1F33;
@@ -98,7 +98,7 @@ body {
 }
 
 /* Headings */
-h1, h2, h3, h4, .font-display {
+h1, h2, h3, h4 {
   font-family: var(--font-display);
   text-transform: uppercase;
   letter-spacing: 0.02em;
@@ -118,9 +118,20 @@ h2 {
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 1.25;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+/* Content-area h3 rhythm (product tech pages) */
+.tech-block h3 {
+  margin-top: 36px;
 }
 
 p {
@@ -161,30 +172,6 @@ a {
 .btn-primary:hover {
   background-color: var(--color-navy-dark);
   box-shadow: 0 4px 14px rgba(11, 31, 51, 0.25);
-}
-
-.btn-accent {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 48px;
-  padding: 0 28px;
-  background-color: var(--color-accent);
-  color: var(--color-white) !important;
-  font-family: var(--font-display);
-  font-size: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  border-radius: var(--radius-button);
-  border: none;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  white-space: nowrap;
-}
-
-.btn-accent:hover {
-  background-color: var(--color-accent-hover);
 }
 
 .btn-secondary {
@@ -236,6 +223,53 @@ a {
   color: var(--color-white) !important;
 }
 
+/* Small button variant (sidebar / compact CTAs) */
+.btn-sm {
+  font-size: 13px;
+  padding: 8px 12px;
+  height: auto;
+}
+
+/* Full-width block button (sidebar) */
+.btn-sidebar {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+/* Full-width button for forms */
+.btn-block {
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+}
+
+/* White button for navy backgrounds (CTA banners) */
+.btn-white {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  padding: 0 28px;
+  background-color: var(--color-white);
+  color: var(--color-navy) !important;
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: var(--radius-button);
+  border: 1.5px solid var(--color-white);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.btn-white:hover {
+  background-color: transparent;
+  color: var(--color-white) !important;
+}
+
 /* Header & Navigation (Height 80px) */
 .header-sticky {
   position: sticky;
@@ -265,7 +299,7 @@ a {
 }
 
 .brand-logo img {
-  height: 44px;
+  height: 64px;
   width: auto;
 }
 
@@ -360,6 +394,50 @@ a {
   background-color: var(--color-bg);
   color: var(--color-navy);
   font-weight: 600;
+}
+
+.dropdown-menu a.active {
+  font-weight: 700;
+  color: var(--color-navy);
+}
+
+/* Slim top information bar (address / email / CAGE) */
+.top-bar {
+  background-color: var(--color-navy-dark);
+  color: rgba(255, 255, 255, 0.85);
+  font-family: var(--font-body);
+  font-size: 12.5px;
+  letter-spacing: 0.02em;
+}
+
+.top-bar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.top-bar a {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.top-bar a:hover {
+  color: var(--color-white);
+}
+
+.top-bar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.top-bar-tag {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  color: var(--color-gold);
+  letter-spacing: 0.06em;
 }
 
 .mobile-toggle {
@@ -606,6 +684,12 @@ a {
   flex-grow: 1;
 }
 
+/* Card CTA buttons align left and pin to card bottom */
+.product-item-body .btn {
+  align-self: flex-start;
+  margin-top: auto;
+}
+
 /* 4-Step Workflow Cards */
 .workflow-grid {
   display: grid;
@@ -650,6 +734,45 @@ a {
   box-shadow: var(--shadow-card);
 }
 
+/* Unified form controls (replaces ~70 inline label/input variants) */
+.form-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--color-navy);
+}
+
+.form-input,
+.form-textarea,
+.form-select {
+  width: 100%;
+  height: 44px;
+  padding: 0 12px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-input, 6px);
+  font-family: var(--font-body);
+  font-size: 15px;
+  color: var(--color-text);
+  background-color: var(--color-white);
+  box-sizing: border-box;
+}
+
+.form-textarea {
+  height: auto;
+  min-height: 120px;
+  padding: 12px;
+  resize: vertical;
+}
+
+.form-input:focus,
+.form-textarea:focus,
+.form-select:focus {
+  outline: none;
+  border-color: var(--color-navy);
+  box-shadow: 0 0 0 2px rgba(11, 31, 51, 0.08);
+}
+
 .accordion-drawer {
   background-color: var(--color-navy);
   color: var(--color-white);
@@ -685,20 +808,6 @@ a {
 }
 
 /* Product Tech Doc Page Styles */
-.product-hero {
-  background-color: var(--color-navy);
-  color: var(--color-white);
-  padding: 80px 0;
-  background-image: linear-gradient(rgba(11, 31, 51, 0.85), rgba(11, 31, 51, 0.92)), url('../images/products.png');
-  background-size: cover;
-  background-position: center;
-}
-
-.product-hero h1 {
-  color: var(--color-white);
-  margin-bottom: 16px;
-}
-
 .tech-doc-container {
   max-width: 1280px;
   width: 100%;
@@ -723,10 +832,26 @@ a {
 }
 
 .tech-sidebar h4 {
-  font-family: var(--font-display);
   font-size: 16px;
   color: var(--color-navy);
   margin-bottom: 16px;
+}
+
+/* Sidebar support block typography */
+.sidebar-label {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--color-steel-gray);
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+}
+
+.sidebar-note {
+  font-size: 13px;
+  color: var(--color-mil-gray);
+  line-height: 1.5;
+  margin-bottom: 12px;
 }
 
 .tech-sidebar-menu {
@@ -881,7 +1006,6 @@ code {
 }
 
 .feature-card-item h4 {
-  font-family: var(--font-display);
   font-size: 20px;
   font-weight: 700;
   color: var(--color-navy);
@@ -925,6 +1049,119 @@ code {
   letter-spacing: 0.04em;
 }
 
+/* Stats bar (milpaq-style big numbers below hero) */
+.stats-bar {
+  background-color: var(--color-navy);
+  color: var(--color-white);
+  padding: 48px 0;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  text-align: center;
+}
+
+.stat-number {
+  font-family: var(--font-display);
+  font-size: 56px;
+  font-weight: 800;
+  color: var(--color-white);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.stat-label {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* Testimonials */
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  margin-top: 40px;
+}
+
+.testimonial-card {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  padding: 36px;
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-quote {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--color-text);
+  flex-grow: 1;
+  margin-bottom: 24px;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.testimonial-initials {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--color-navy);
+  color: var(--color-white);
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.testimonial-name {
+  font-weight: 700;
+  color: var(--color-navy);
+  font-size: 15px;
+}
+
+.testimonial-role {
+  font-size: 13px;
+  color: var(--color-steel-gray);
+}
+
+/* CTA Banner Section (navy background, white text) */
+.cta-section {
+  background-color: var(--color-navy);
+  color: var(--color-white);
+  text-align: center;
+  padding: 80px 0;
+}
+
+.cta-section h2 {
+  color: var(--color-white);
+  margin-bottom: 16px;
+}
+
+.cta-section p {
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 640px;
+  margin: 0 auto 32px;
+}
+
+.cta-section .eyebrow-tag {
+  color: var(--color-gold);
+}
+
 /* Footer Styling */
 .site-footer {
   background-color: var(--color-navy);
@@ -949,8 +1186,12 @@ code {
   max-width: 360px;
 }
 
+.site-footer .brand-title {
+  color: var(--color-white);
+  font-size: 20px;
+}
+
 .footer-col h4 {
-  font-family: var(--font-display);
   color: var(--color-white);
   font-size: 18px;
   font-weight: 700;
@@ -1001,6 +1242,9 @@ code {
   .tech-block { padding: 24px 16px; }
   h1 { font-size: 38px; }
   h2 { font-size: 28px; }
+  .section-spacing { padding-top: 60px; padding-bottom: 60px; }
+  .subpage-hero { min-height: 300px; }
+  .subpage-hero h1 { font-size: 34px; }
 
   .header-sticky { height: 72px; }
   .header-container { padding-left: 20px; padding-right: 20px; }
@@ -1028,6 +1272,9 @@ code {
   .capabilities-grid,
   .products-grid-11,
   .workflow-grid { grid-template-columns: 1fr; }
+  .stats-grid { grid-template-columns: 1fr; gap: 24px; }
+  .stat-number { font-size: 44px; }
+  .testimonial-grid { grid-template-columns: 1fr; }
   .product-item-card.featured-flagship { grid-column: span 1; }
 
   .footer-grid { grid-template-columns: 1fr 1fr; }
