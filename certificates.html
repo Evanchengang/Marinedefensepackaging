@@ -5,12 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quality & Compliance | Marine Defense Packaging</title>
   <meta name="description" content="Quality processes, technical documentation, inspection protocols, and customer compliance standards at Marine Defense Packaging.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="assets/css/concept-light.css">
   <link rel="icon" type="image/png" href="assets/images/logo-final-1-80x80.png">
 </head>
 <body>
 
-  <!-- Sticky Header (Height 80px) -->
+  <!-- Sticky Navigation Header (Height 80px) -->
   <header class="header-sticky">
     <div class="header-container">
       <a href="index.html" class="brand-logo">
@@ -23,16 +28,35 @@
 
       <nav>
         <ul class="nav-menu" id="navMenu">
-          <li><a href="products.html" class="nav-link">Industries</a></li>
-          <li><a href="products.html" class="nav-link">Solutions</a></li>
-          <li><a href="about.html" class="nav-link">Capabilities</a></li>
-          <li><a href="certificates.html" class="nav-link active">Quality</a></li>
-          <li><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item has-dropdown">
+            <a href="products.html" class="nav-link">
+              Products
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="products/155mm-artillery-pallets.html">155mm Heavy Artillery Pallets</a></li>
+              <li><a href="products/ammunition-containers.html">Ammunition Containers</a></li>
+              <li><a href="products/wirebound-boxes.html">Wirebound Boxes</a></li>
+              <li><a href="products/bomb-pallets.html">Bomb Pallets</a></li>
+              <li><a href="products/mortar-packaging.html">Mortar Packaging</a></li>
+              <li><a href="products/ammo-can-pallet-trays.html">Ammo Can Pallet Trays</a></li>
+              <li><a href="products/internal-packaging.html">Internal Protective Packaging</a></li>
+              <li><a href="products/timber-packaging.html">Timber Packaging</a></li>
+              <li><a href="products/ammunition-links.html">Ammunition Links</a></li>
+              <li><a href="products/injection-molded-cases.html">Molded Protective Cases</a></li>
+              <li><a href="products/filler-separator.html">Filler & Separator Pads</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a href="products.html" class="nav-link">Solutions</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">Capabilities</a></li>
+          <li class="nav-item"><a href="certificates.html" class="nav-link active">Quality</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
         </ul>
       </nav>
 
       <div class="header-actions">
-        <a href="contact.html" class="btn-primary">Contact Us</a>
+        <a href="contact.html" class="btn-primary">REQUEST PACKAGING QUOTE</a>
       </div>
 
       <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
@@ -44,49 +68,82 @@
   </header>
 
   <main>
-    <section class="hero-section" style="min-height: 380px; background-image: linear-gradient(rgba(11, 31, 51, 0.85), rgba(11, 31, 51, 0.9)), url('assets/images/us-joint-certification.jpg');">
-      <div class="hero-container">
+    <!-- Pristine Clean Hero Section with Industrial Photography Background -->
+    <section class="hero-section" style="min-height: 440px; background-image: linear-gradient(rgba(11, 31, 51, 0.85), rgba(11, 31, 51, 0.9)), url('assets/images/about.png');">
+      <div class="container">
         <div class="hero-content" style="max-width: 800px;">
+          <div class="eyebrow-tag" style="color: var(--color-gold);"><span class="eyebrow-line"></span>QUALITY ASSURANCE & COMPLIANCE</div>
           <h1>Built for Demanding Defense Requirements</h1>
-          <p>Quality processes, engineering documentation, and thorough inspection supporting critical asset protection.</p>
+          <p>Quality processes, engineering documentation, and thorough inspection protocols supporting critical asset protection and contract execution.</p>
         </div>
       </div>
     </section>
 
-    <section class="section-padding">
+    <!-- SECTION 1: QUALITY SYSTEMS & PROCESS CONTROLS (3 Cards Layout) -->
+    <section class="section-spacing">
       <div class="container">
         <div class="section-header text-center">
+          <div class="eyebrow-tag"><span class="eyebrow-line"></span>RIGOROUS AUDITING</div>
           <h2>Quality Systems & Process Controls</h2>
-          <p>Marine Defense Packaging enforces rigorous quality verification across design, material selection, fabrication, and final inspection.</p>
+          <p>Marine Defense Packaging enforces rigorous quality verification across design, material selection, fabrication, and final pre-shipment inspection.</p>
         </div>
 
-        <div class="trust-cards-grid">
-          <div class="feature-card">
-            <div class="feature-number">01</div>
+        <div class="workflow-grid" style="grid-template-columns: repeat(3, 1fr);">
+          <div class="workflow-card">
+            <div class="workflow-num">01</div>
             <h3>Specification Validation</h3>
-            <p>Every packaging design undergo thorough engineering review against technical drawing packages, weight tolerances, and structural load constraints.</p>
+            <p>Every packaging design undergoes thorough engineering review against technical drawing packages, weight tolerances, and structural load constraints.</p>
           </div>
 
-          <div class="feature-card">
-            <div class="feature-number">02</div>
+          <div class="workflow-card">
+            <div class="workflow-num">02</div>
             <h3>In-Process Inspection</h3>
-            <p>Continuous dimensional checks, joint integrity verification, and hardware load tests conducted throughout fabrication.</p>
+            <p>Continuous dimensional checks, joint integrity verification, and hardware load tests conducted throughout custom container fabrication.</p>
           </div>
 
-          <div class="feature-card">
-            <div class="feature-number">03</div>
+          <div class="workflow-card">
+            <div class="workflow-num">03</div>
             <h3>Full Traceability</h3>
-            <p>Complete documentation packages accompanying finished containers, ensuring total traceability and specification compliance.</p>
+            <p>Complete documentation packages accompanying finished containers, ensuring total material traceability and certificate of compliance.</p>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- SECTION 2: DEFENSE CREDENTIALS & COMPLIANCE DATA -->
+    <section class="section-spacing" style="background-color: var(--color-bg); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
+      <div class="container">
+        <div class="quote-split-grid">
+          <div>
+            <div class="eyebrow-tag"><span class="eyebrow-line"></span>DOCUMENTED COMPLIANCE</div>
+            <h2>Defense Quality Standards & Verification</h2>
+            <p style="margin-bottom: 24px;">Our quality management system guarantees that every packaging solution manufactured meets military specification thresholds for shock isolation, weather protection, and payload retention.</p>
+            
+            <div style="background-color: var(--color-white); border-radius: var(--radius-card); padding: 32px; border: 1px solid var(--color-border); box-shadow: var(--shadow-card); margin-bottom: 24px;">
+              <h3 style="font-size: 20px; margin-bottom: 16px;">Quality Verification Desk</h3>
+              <p style="font-size: 15px; color: var(--color-mil-gray); margin-bottom: 12px;"><strong>CAGE Certified Supplier:</strong> Full compliance with defense procurement registries.</p>
+              <p style="font-size: 15px; color: var(--color-mil-gray); margin-bottom: 12px;"><strong>MIL-STD-2073 Preservation:</strong> Certified barrier wrapping, moisture control, and VCI rust prevention.</p>
+              <p style="font-size: 15px; color: var(--color-mil-gray);"><strong>UN POP Dangerous Goods:</strong> Certified Class 1 explosive payload container testing.</p>
+            </div>
+          </div>
+
+          <!-- Clean Card Frame for Document Reference -->
+          <div style="background-color: var(--color-white); border-radius: var(--radius-card); padding: 32px; border: 1px solid var(--color-border); box-shadow: var(--shadow-card);">
+            <div class="eyebrow-tag" style="margin-bottom: 8px;"><span class="eyebrow-line"></span>CERTIFICATE REFERENCE</div>
+            <h3 style="font-size: 22px; margin-bottom: 16px;">Defense Accreditation</h3>
+            <img src="assets/images/us-joint-certification.jpg" alt="Defense Quality Certification Document" style="width: 100%; border-radius: 8px; border: 1px solid var(--color-border); margin-bottom: 16px;">
+            <p style="font-size: 14px; color: var(--color-steel-gray);">Official quality verification records and joint defense packaging certification documentation maintained on file for audit compliance.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: CONTACT CTA -->
     <section class="cta-section">
       <div class="container">
-        <h2>Request Technical Specifications & Compliance Data</h2>
-        <p>Our quality engineering team can provide detailed documentation for your packaging program.</p>
-        <a href="contact.html" class="btn-primary">Contact Quality Engineering</a>
+        <h2>Request Quality & Compliance Documentation</h2>
+        <p>Our quality engineering team can provide detailed material test reports and certification data for your contract.</p>
+        <a href="contact.html" class="btn-primary" style="background-color: var(--color-white); color: var(--color-navy) !important;">Contact Quality Desk</a>
       </div>
     </section>
   </main>
@@ -96,17 +153,18 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <div class="brand-title" style="color: #ffffff; font-size: 20px;">Marine Defense Packaging</div>
-          <p>Mission-critical packaging solutions engineered for defense and high-reliability industrial applications.</p>
+          <div class="brand-title" style="color: #ffffff; font-size: 22px;">Marine Defense Packaging</div>
+          <p>Mission-critical packaging solutions engineered for defense applications, ammunition transport, and heavy payload protection.</p>
         </div>
 
         <div class="footer-col">
-          <h4>Solutions</h4>
+          <h4>Products</h4>
           <ul class="footer-menu">
-            <li><a href="products/ammunition-containers.html">Ammunition Packaging</a></li>
-            <li><a href="products/wirebound-boxes.html">Military Transport Containers</a></li>
-            <li><a href="products/internal-packaging.html">Custom Protective Packaging</a></li>
-            <li><a href="products/155mm-artillery-pallets.html">Specialized Defense Pallets</a></li>
+            <li><a href="products/155mm-artillery-pallets.html">155mm Artillery Pallets</a></li>
+            <li><a href="products/ammunition-containers.html">Ammunition Containers</a></li>
+            <li><a href="products/wirebound-boxes.html">Wirebound Boxes</a></li>
+            <li><a href="products/bomb-pallets.html">Bomb Pallets</a></li>
+            <li><a href="products/filler-separator.html">Filler & Separator Pads</a></li>
           </ul>
         </div>
 
@@ -125,7 +183,7 @@
           <ul class="footer-menu">
             <li><a href="contact.html">Request a Quote</a></li>
             <li><a href="contact.html">Technical Support</a></li>
-            <li><a href="contact.html">Submit Drawings</a></li>
+            <li><a href="contact.html">Submit Specifications</a></li>
           </ul>
         </div>
       </div>
