@@ -10,7 +10,7 @@
 </head>
 <body>
 
-  <!-- Sticky Header (Height 80px) -->
+  <!-- 82px Sticky Header -->
   <header class="header-sticky">
     <div class="header-container">
       <a href="index.html" class="brand-logo">
@@ -23,16 +23,31 @@
 
       <nav>
         <ul class="nav-menu" id="navMenu">
-          <li><a href="products.html" class="nav-link">Industries</a></li>
-          <li><a href="products.html" class="nav-link">Solutions</a></li>
-          <li><a href="about.html" class="nav-link">Capabilities</a></li>
-          <li><a href="certificates.html" class="nav-link">Quality</a></li>
-          <li><a href="about.html" class="nav-link">About</a></li>
+          <!-- Products with Dropdown Menu -->
+          <li class="nav-item has-dropdown">
+            <a href="products.html" class="nav-link">
+              Products
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="products/ammunition-containers.html">Ammunition Containers</a></li>
+              <li><a href="products/wirebound-boxes.html">Wirebound Boxes</a></li>
+              <li><a href="products/mortar-packaging.html">Mortar Packaging</a></li>
+              <li><a href="products/bomb-pallets.html">Bomb Pallets</a></li>
+              <li><a href="products/internal-packaging.html">Internal Packaging</a></li>
+              <li><a href="products/timber-packaging.html">Timber Packaging</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a href="products.html" class="nav-link">Solutions</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">Capabilities</a></li>
+          <li class="nav-item"><a href="certificates.html" class="nav-link">Quality</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
         </ul>
       </nav>
 
       <div class="header-actions">
-        <a href="contact.html" class="btn-primary">Contact Us</a>
+        <a href="contact.html" class="btn-primary">REQUEST QUOTE</a>
       </div>
 
       <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
@@ -44,217 +59,332 @@
   </header>
 
   <main>
-    <!-- SECTION 1: HERO AREA -->
+    <!-- SECTION 1 HERO (720px Height) -->
     <section class="hero-section">
-      <div class="hero-container">
+      <div class="container">
         <div class="hero-content">
           <h1>Mission-Critical Packaging Solutions for Defense Applications</h1>
-          <p>Marine Defense Packaging provides engineered packaging solutions designed to protect critical assets during storage, transportation, and deployment.</p>
+          <p>Marine Defense Packaging provides reliable packaging solutions designed to protect critical assets during storage, transportation, and deployment.</p>
           <div class="hero-actions">
-            <a href="products.html" class="btn-primary">Explore Solutions</a>
-            <a href="contact.html" class="btn-secondary">Contact Our Team</a>
+            <a href="contact.html" class="btn-primary">REQUEST A QUOTE</a>
+            <a href="products.html" class="btn-secondary">EXPLORE PRODUCTS</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SECTION 2: TRUST MESSAGE -->
-    <section class="section-padding">
+    <!-- SECTION 2 TRUST STATISTICS (MILPAQ Style) -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-block">
+            <div class="stat-number">25+</div>
+            <div class="stat-label">Years of Packaging Experience</div>
+          </div>
+          <div class="stat-block">
+            <div class="stat-number">100+</div>
+            <div class="stat-label">Defense & Industrial Applications</div>
+          </div>
+          <div class="stat-block">
+            <div class="stat-number">Reliable</div>
+            <div class="stat-label">Mission-Critical Solutions</div>
+          </div>
+          <div class="stat-block">
+            <div class="stat-number">Global</div>
+            <div class="stat-label">Trusted Supply Support</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3 WHAT WE DO -->
+    <section class="section-spacing">
       <div class="container">
         <div class="section-header text-center">
-          <h2>Protecting Critical Assets Through Reliable Packaging Solutions</h2>
-          <p>From military equipment to specialized components, Marine Defense Packaging delivers packaging solutions engineered for demanding defense environments.</p>
+          <h2>Making Defense Packaging Simple, Reliable, and Mission Ready</h2>
+          <p>End-to-end protective packaging capabilities customized to meet demanding defense and high-reliability industrial applications.</p>
         </div>
 
-        <div class="trust-cards-grid">
-          <div class="feature-card">
-            <div class="feature-number">01</div>
-            <h3>Defense Experience</h3>
-            <p>Understanding the stringent requirements of mission-critical packaging, military transport containers, and specialized protective enclosures.</p>
+        <div class="what-we-do-grid">
+          <div class="card-white">
+            <div class="card-number">01</div>
+            <h3>Defense Packaging Solutions</h3>
+            <p>Packaging systems designed specifically for demanding defense applications, heavy-duty transport, and severe environmental deployment.</p>
           </div>
 
-          <div class="feature-card">
-            <div class="feature-number">02</div>
-            <h3>Engineering Capability</h3>
-            <p>Custom packaging solutions designed for complex applications, heavy-duty payload transport, and harsh environmental protection.</p>
+          <div class="card-white">
+            <div class="card-number">02</div>
+            <h3>Custom Engineering</h3>
+            <p>Solutions developed according to exact customer requirements, military technical specifications, and structural load constraints.</p>
           </div>
 
-          <div class="feature-card">
-            <div class="feature-number">03</div>
-            <h3>Reliable Performance</h3>
-            <p>Consistent quality, thorough inspection protocols, and dependable delivery supporting long-term defense supplier relationships.</p>
+          <div class="card-white">
+            <div class="card-number">03</div>
+            <h3>Quality & Reliability</h3>
+            <p>Consistent manufacturing processes, dimensional inspection, and complete documentation supporting critical defense shipments.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SECTION 3: DEFENSE SOLUTIONS -->
-    <section class="section-padding" style="background-color: var(--color-bg); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
+    <!-- SECTION 4 SOLUTIONS -->
+    <section class="section-spacing" style="background-color: var(--color-bg); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
       <div class="container">
         <div class="section-header text-center">
           <h2>Defense Packaging Solutions</h2>
-          <p>Engineered protective systems engineered to meet rigorous defense deployment and transportation demands.</p>
+          <p>Engineered protective systems designed around tactical payload requirements and global transit hazards.</p>
         </div>
 
         <div class="solutions-grid">
-          <!-- Solution 1 -->
-          <div class="solution-card">
-            <img src="assets/images/header1-2-1030x579.png" alt="Ammunition Packaging" class="solution-image">
-            <div class="solution-body">
+          <div class="product-card">
+            <img src="assets/images/header1-2-1030x579.png" alt="Ammunition Packaging" class="product-image">
+            <div class="product-body">
               <h3>Ammunition Packaging</h3>
-              <p>Heavy-duty vertical artillery pallets, 18+ military ammo container models, and specialized pallet trays built to exact technical specifications.</p>
-              <a href="products/ammunition-containers.html" class="btn-link">Learn More &rarr;</a>
+              <p>Heavy-duty vertical artillery pallets, 18+ military ammo container models, and specialized pallet trays built to technical specifications.</p>
+              <a href="products/ammunition-containers.html" class="btn-secondary-dark" style="align-self: flex-start; margin-top: auto;">Learn More &rarr;</a>
             </div>
           </div>
 
-          <!-- Solution 2 -->
-          <div class="solution-card">
-            <img src="assets/images/timberpackaging.png" alt="Military Transport Packaging" class="solution-image">
-            <div class="solution-body">
+          <div class="product-card">
+            <img src="assets/images/wirebound-1.png" alt="Military Transport Packaging" class="product-image">
+            <div class="product-body">
               <h3>Military Transport Packaging</h3>
-              <p>PPP-B-585 compliant wirebound wooden boxes and heavy-duty timber packaging systems engineered for global deployment protection.</p>
-              <a href="products/wirebound-boxes.html" class="btn-link">Learn More &rarr;</a>
+              <p>PPP-B-585 compliant wirebound wooden boxes and structural timber packaging systems engineered for worldwide military transit.</p>
+              <a href="products/wirebound-boxes.html" class="btn-secondary-dark" style="align-self: flex-start; margin-top: auto;">Learn More &rarr;</a>
             </div>
           </div>
 
-          <!-- Solution 3 -->
-          <div class="solution-card">
-            <img src="assets/images/internal.png" alt="Custom Protective Packaging" class="solution-image">
-            <div class="solution-body">
-              <h3>Custom Protective Packaging</h3>
-              <p>Internal foam inserts, high-density polyethylene separators, and precision-engineered internal protective assemblies for sensitive equipment.</p>
-              <a href="products/internal-packaging.html" class="btn-link">Learn More &rarr;</a>
+          <div class="product-card">
+            <img src="assets/images/internal.png" alt="Protective Packaging Systems" class="product-image">
+            <div class="product-body">
+              <h3>Protective Packaging Systems</h3>
+              <p>Precision-engineered foam inserts, HDPE separators, and custom shock-dampening assemblies for sensitive defense instruments.</p>
+              <a href="products/internal-packaging.html" class="btn-secondary-dark" style="align-self: flex-start; margin-top: auto;">Learn More &rarr;</a>
             </div>
           </div>
 
-          <!-- Solution 4 -->
-          <div class="solution-card">
-            <img src="assets/images/products.png" alt="Specialized Defense Containers" class="solution-image">
-            <div class="solution-body">
-              <h3>Specialized Defense Containers</h3>
-              <p>MHU bomb pallets, heavy artillery transport cradles, and custom metal-framed protective enclosures for critical defense assets.</p>
-              <a href="products/155mm-artillery-pallets.html" class="btn-link">Learn More &rarr;</a>
+          <div class="product-card">
+            <img src="assets/images/products.png" alt="Custom Defense Packaging" class="product-image">
+            <div class="product-body">
+              <h3>Custom Defense Packaging</h3>
+              <p>MHU series bomb pallets, heavy artillery transport cradles, and custom metal-framed protective enclosures for critical defense assets.</p>
+              <a href="products/155mm-artillery-pallets.html" class="btn-secondary-dark" style="align-self: flex-start; margin-top: auto;">Learn More &rarr;</a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SECTION 4: CAPABILITIES -->
-    <section class="section-padding">
+    <!-- SECTION 5 PRODUCTS (Crucial for SEO & Search) -->
+    <section class="section-spacing">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2>Defense Packaging Products</h2>
+          <p>Explore standard military-specification container products and specialized transport solutions.</p>
+        </div>
+
+        <div class="products-grid">
+          <!-- 1. Ammunition Containers -->
+          <div class="product-card">
+            <img src="assets/images/blueprint-m2a1.png" alt="Ammunition Containers" class="product-image">
+            <div class="product-body">
+              <h3>Ammunition Containers</h3>
+              <p>Standardized steel military ammunition containers (M19A1, M2A1, PA108, PA120) with hermetic rubber gaskets.</p>
+              <a href="products/ammunition-containers.html" class="btn-secondary-dark" style="align-self: flex-start; margin-top: auto;">View Product &rarr;</a>
+            </div>
+          </div>
+
+          <!-- 2. Wirebound Boxes -->
+          <div class="product-card">
+            <img src="assets/images/wirebound-1.png" alt="Wirebound Boxes" class="product-image">
+            <div class="product-body">
+              <h3>Wirebound Boxes</h3>
+              <p>PPP-B-585 compliant high-strength wooden wirebound boxes engineered for defense logistics and hardware transport.</p>
+              <a href="products/wirebound-boxes.html" class="btn-secondary-dark" style="align-self: flex-start; margin-top: auto;">View Product &rarr;</a>
+            </div>
+          </div>
+
+          <!-- 3. Mortar Packaging -->
+          <div class="product-card">
+            <img src="assets/images/MORTARTUBE.png" alt="Mortar Packaging" class="product-image">
+            <div class="product-body">
+              <h3>Mortar Packaging</h3>
+              <p>Protective container systems engineered for 60mm, 81mm, and 120mm mortar rounds, tail fins, and propellant charges.</p>
+              <a href="products/mortar-packaging.html" class="btn-secondary-dark" style="align-self: flex-start; margin-top: auto;">View Product &rarr;</a>
+            </div>
+          </div>
+
+          <!-- 4. Bomb Pallets -->
+          <div class="product-card">
+            <img src="assets/images/bpall-180x180.jpg" alt="Bomb Pallets" class="product-image">
+            <div class="product-body">
+              <h3>Bomb Pallets</h3>
+              <p>Heavy-duty MHU series ordnance transport pallets and specialized cradle assemblies for heavy defense payloads.</p>
+              <a href="products/bomb-pallets.html" class="btn-secondary-dark" style="align-self: flex-start; margin-top: auto;">View Product &rarr;</a>
+            </div>
+          </div>
+
+          <!-- 5. Internal Packaging -->
+          <div class="product-card">
+            <img src="assets/images/internal.png" alt="Internal Packaging" class="product-image">
+            <div class="product-body">
+              <h3>Internal Packaging</h3>
+              <p>Custom CNC routed polyethylene foam inserts, anti-static dampening layers, and internal payload separators.</p>
+              <a href="products/internal-packaging.html" class="btn-secondary-dark" style="align-self: flex-start; margin-top: auto;">View Product &rarr;</a>
+            </div>
+          </div>
+
+          <!-- 6. Timber Packaging -->
+          <div class="product-card">
+            <img src="assets/images/timberpackaging.png" alt="Timber Packaging" class="product-image">
+            <div class="product-body">
+              <h3>Timber Packaging</h3>
+              <p>Heavy hardwood skids, structural framing, and ISPM-15 heat-treated blocking systems for oversized equipment.</p>
+              <a href="products/timber-packaging.html" class="btn-secondary-dark" style="align-self: flex-start; margin-top: auto;">View Product &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6 CAPABILITIES -->
+    <section class="section-spacing" style="background-color: var(--color-bg); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
       <div class="container">
         <div class="section-header text-center">
           <h2>Engineering and Manufacturing Capabilities</h2>
-          <p>Comprehensive engineering and precision fabrication capability for defense and industrial applications.</p>
+          <p>Comprehensive engineering rigor, material expertise, and precision fabrication supporting critical shipments.</p>
         </div>
 
         <div class="capabilities-grid">
-          <div class="capability-item">
-            <div class="capability-icon">
-              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a2 2 0 01-2 2 2 2 0 01-2-2V4zM4 7a2 2 0 012-2h10a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V7z"></path></svg>
-            </div>
-            <div class="capability-content">
-              <h3>Custom Packaging Solutions</h3>
-              <p>Protective packaging designed specifically around customer payload requirements, transit hazards, and storage life cycles.</p>
-            </div>
-          </div>
-
-          <div class="capability-item">
-            <div class="capability-icon">
+          <div class="capability-card">
+            <div class="capability-icon-wrapper">
               <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L5.6 15.11a2 2 0 00-1.558 2.052l.245 4.303A2 2 0 006.279 23.47h11.442a2 2 0 001.992-2.005l.245-4.303a2 2 0 00-.53-1.734z"></path></svg>
             </div>
-            <div class="capability-content">
-              <h3>Precision Fabrication</h3>
-              <p>Advanced woodworking, metal fabrication, and assembly methods engineered for durable, repeatable packaging systems.</p>
-            </div>
+            <h3>Custom Packaging Fabrication</h3>
+            <p>Advanced woodworking, metal fabrication, and custom container assembly engineered to customer specifications.</p>
           </div>
 
-          <div class="capability-item">
-            <div class="capability-icon">
+          <div class="capability-card">
+            <div class="capability-icon-wrapper">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a2 2 0 01-2 2 2 2 0 01-2-2V4zM4 7a2 2 0 012-2h10a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V7z"></path></svg>
+            </div>
+            <h3>Protective Packaging Solutions</h3>
+            <p>Engineered shock-mitigation, moisture barriers, and heavy payload containment designed for rough transit environments.</p>
+          </div>
+
+          <div class="capability-card">
+            <div class="capability-icon-wrapper">
               <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
             </div>
-            <div class="capability-content">
-              <h3>Material Expertise</h3>
-              <p>Engineered hardwood, plywood, structural steel, aluminum hardware, and shock-absorbing protective inner materials.</p>
-            </div>
+            <h3>Material Expertise</h3>
+            <p>Structural oak, exterior plywood, heavy-gauge steel, aluminum hardware, and high-density polymer cushioning materials.</p>
           </div>
 
-          <div class="capability-item">
-            <div class="capability-icon">
+          <div class="capability-card">
+            <div class="capability-icon-wrapper">
               <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
             </div>
-            <div class="capability-content">
-              <h3>Quality Inspection</h3>
-              <p>Consistent quality control processes, dimensional validation, and rigorous testing protocols supporting demanding applications.</p>
+            <h3>Quality Inspection</h3>
+            <p>Rigorous in-process quality control, dimensional validation, and load testing verifying full drawing compliance.</p>
+          </div>
+
+          <div class="capability-card">
+            <div class="capability-icon-wrapper">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
             </div>
+            <h3>Documentation Support</h3>
+            <p>Complete documentation packages, material test reports, and compliance traceability accompanying every delivery.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SECTION 5: QUALITY AND RELIABILITY -->
-    <section class="section-padding quality-section">
+    <!-- SECTION 7 HOW IT WORKS (MILPAQ Workflow Style) -->
+    <section class="section-spacing">
       <div class="container">
-        <div class="quality-grid">
-          <div>
-            <h2>Built for Demanding Defense Requirements</h2>
-            <p>Marine Defense Packaging focuses on dependable packaging solutions that support secure transportation, storage, and protection of critical equipment.</p>
-            
-            <ul class="quality-list">
-              <li class="quality-list-item">
-                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                <div>
-                  <strong>Rigorous Quality Processes</strong>
-                  <p>Comprehensive quality checks at every stage of fabrication to ensure complete compliance with engineering drawings.</p>
-                </div>
-              </li>
-              <li class="quality-list-item">
-                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                <div>
-                  <strong>Complete Documentation</strong>
-                  <p>Detailed technical documentation, material certifications, and traceability for critical defense shipments.</p>
-                </div>
-              </li>
-              <li class="quality-list-item">
-                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                <div>
-                  <strong>Thorough Inspection Protocols</strong>
-                  <p>Dimensional, load, and visual inspection verifying structural integrity before shipment release.</p>
-                </div>
-              </li>
-            </ul>
+        <div class="section-header text-center">
+          <h2>From Requirement to Delivery</h2>
+          <p>A streamlined four-step execution process designed to deliver mission-ready defense packaging on schedule.</p>
+        </div>
+
+        <div class="timeline-grid">
+          <div class="timeline-step">
+            <div class="step-num">01</div>
+            <h3>Submit Requirements</h3>
+            <p>Share your payload dimensions, weight specifications, transport conditions, and targeted technical drawings.</p>
           </div>
 
-          <div class="quality-image-wrapper">
-            <img src="assets/images/about.png" alt="Quality Inspection and Defense Packaging Engineering">
+          <div class="timeline-step">
+            <div class="step-num">02</div>
+            <h3>Review Specifications</h3>
+            <p>Our engineering team evaluates structural requirements, material selection, and protective cushioning designs.</p>
+          </div>
+
+          <div class="timeline-step">
+            <div class="step-num">03</div>
+            <h3>Prepare Packaging Solution</h3>
+            <p>Precision fabrication, assembly, and rigorous quality inspection verifying complete specification compliance.</p>
+          </div>
+
+          <div class="timeline-step">
+            <div class="step-num">04</div>
+            <h3>Deliver Mission-Ready Packaging</h3>
+            <p>Dependable delivery of ready-to-use protective containers accompanied by complete documentation.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SECTION 6: ABOUT COMPANY -->
-    <section class="section-padding">
+    <!-- SECTION 8 WHY CHOOSE US -->
+    <section class="section-spacing" style="background-color: var(--color-bg); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2>Why Defense Customers Choose Marine Defense Packaging</h2>
+          <p>Long-term supplier trust built on engineering capability, consistent quality, and responsive execution.</p>
+        </div>
+
+        <div class="why-grid">
+          <div class="why-col">
+            <h3>Experienced</h3>
+            <p>Deep understanding of defense packaging requirements, technical drawing packages, and mission-critical payload protection.</p>
+          </div>
+
+          <div class="why-col">
+            <h3>Reliable</h3>
+            <p>Focused on consistent manufacturing quality, thorough inspection protocols, and dependable lead time execution.</p>
+          </div>
+
+          <div class="why-col">
+            <h3>Responsive</h3>
+            <p>Dedicated technical support assisting defense prime contractors from initial requirement inquiry through final shipment.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 9 ABOUT -->
+    <section class="section-spacing">
       <div class="container">
         <div class="about-preview-grid">
           <div>
-            <img src="assets/images/m2a1-factory-inspection.jpg" alt="Marine Defense Packaging Engineering Facility" style="width: 100%; border-radius: var(--radius-card); border: 1px solid var(--color-card-border); box-shadow: var(--shadow-md);">
+            <img src="assets/images/m2a1-factory-inspection.jpg" alt="Marine Defense Packaging Facility" style="width: 100%; border-radius: var(--radius-card); border: 1px solid var(--color-border); box-shadow: var(--shadow-card);">
           </div>
           <div>
-            <h2>A Trusted Partner in Defense Packaging</h2>
-            <p style="margin-bottom: 20px;">Marine Defense Packaging specializes in providing packaging solutions for defense and industrial applications.</p>
-            <p style="margin-bottom: 28px;">With experience supporting demanding customers, we focus on reliability, quality, and responsive service to ensure mission-critical payloads arrive safely at their destination.</p>
+            <h2>Built Around Reliability and Precision</h2>
+            <p style="margin-bottom: 20px;">Marine Defense Packaging specializes in defense and industrial packaging solutions engineered to protect high-value payloads in transit and depot storage.</p>
+            <p style="margin-bottom: 28px;">Our focus is protecting critical assets through dependable packaging systems, strict specification compliance, and responsive customer support.</p>
             <a href="about.html" class="btn-secondary-dark">Learn More About Us</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SECTION 7: CONTACT CTA -->
+    <!-- SECTION 10 CONTACT CTA -->
     <section class="cta-section">
       <div class="container">
         <h2>Ready to Discuss Your Packaging Requirements?</h2>
-        <p>Our engineering team is ready to evaluate your technical specifications and provide mission-critical defense packaging solutions.</p>
-        <a href="contact.html" class="btn-primary">Contact Marine Defense Packaging</a>
+        <p>Our technical team is ready to evaluate your specifications and prepare a mission-ready defense packaging solution.</p>
+        <a href="contact.html" class="btn-primary" style="background-color: var(--color-white); color: var(--color-navy) !important;">Contact Our Team</a>
       </div>
     </section>
   </main>
@@ -269,12 +399,14 @@
         </div>
 
         <div class="footer-col">
-          <h4>Solutions</h4>
+          <h4>Products</h4>
           <ul class="footer-menu">
-            <li><a href="products/ammunition-containers.html">Ammunition Packaging</a></li>
-            <li><a href="products/wirebound-boxes.html">Military Transport Containers</a></li>
-            <li><a href="products/internal-packaging.html">Custom Protective Packaging</a></li>
-            <li><a href="products/155mm-artillery-pallets.html">Specialized Defense Pallets</a></li>
+            <li><a href="products/ammunition-containers.html">Ammunition Containers</a></li>
+            <li><a href="products/wirebound-boxes.html">Wirebound Boxes</a></li>
+            <li><a href="products/mortar-packaging.html">Mortar Packaging</a></li>
+            <li><a href="products/bomb-pallets.html">Bomb Pallets</a></li>
+            <li><a href="products/internal-packaging.html">Internal Packaging</a></li>
+            <li><a href="products/timber-packaging.html">Timber Packaging</a></li>
           </ul>
         </div>
 
@@ -293,7 +425,7 @@
           <ul class="footer-menu">
             <li><a href="contact.html">Request a Quote</a></li>
             <li><a href="contact.html">Technical Support</a></li>
-            <li><a href="contact.html">Submit Drawings</a></li>
+            <li><a href="contact.html">Submit Specifications</a></li>
           </ul>
         </div>
       </div>
