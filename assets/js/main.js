@@ -29,7 +29,21 @@ document.addEventListener('DOMContentLoaded', () => {
   initRfqModal();
   initDynamicYear();
   initContactForm();
+  initCardClickDelegation();
 });
+
+// ---------- Product Card Click Delegation ----------
+function initCardClickDelegation() {
+  document.addEventListener('click', (e) => {
+    const card = e.target.closest('.product-card');
+    if (!card) return;
+    if (e.target.closest('a, button, input, textarea, select, [data-open-rfq]')) return;
+    const primaryLink = card.querySelector('a[href]:not([data-open-rfq])');
+    if (primaryLink && primaryLink.href) {
+      primaryLink.click();
+    }
+  });
+}
 
 // ---------- Mobile Navigation ----------
 function initMobileNav() {
@@ -276,3 +290,6 @@ function showToast(message, duration = 5000) {
     toast.classList.remove('show');
   }, duration);
 }
+
+// Expose globally for inline scripts / triggers
+window.showToast = showToast;
