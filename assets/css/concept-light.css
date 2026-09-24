@@ -651,6 +651,11 @@ a {
   color: var(--color-steel-gray);
 }
 
+/* 16:9 variant for video slots */
+.img-placeholder--video {
+  aspect-ratio: 16 / 9;
+}
+
 /* Products Grid (All 11 Products) */
 .products-grid-11 {
   display: grid;
